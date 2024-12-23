@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.body{
+width: 200px;
+border: 1px solid black;
+padding: 50px;
+height:200px;
+text-align: center;
+margin-left: 200px;
+}
+.light{
+  background-color: aquamarine;
+  color: black;
+  
+}
+.dark{
+  background-color: brown;
+  color: aliceblue;
+}
+.college{
+  color: blue;
+}
+
+.text{
+  color: red;
+}
+.text2{
+  color: green;
+}
+.text3{
+  color: chocolate;
+}
+  </style>
+</head>
+<body>
+  <div class="body" id="box"> 
+    <h4>Borude Payal Kondiba</h4>
+    <p>at-shrigonda</p>
+   <p> Mo.no:8767638103</p>
+   <p class="college" id="college">College:= M.J.S College Shrigonda</p>
+  </div>
+<button onclick="light()"> light</button>
+<button onclick="dark()"> dark</button>
+<script>
+  function light(){
+    document.getElementById("box").classList.add("light")
+    document.getElementById("box").classList.remove("dark")
+    // document.getElementById("college").classList.add("text")
+    // document.getElementById("college").classList.remove("text2")
+    // document.getElementById("college").classList.add("text3")
+  }
+  function dark(){
+    document.getElementById("box").classList.add("dark")
+    document.getElementById("box").classList.remove("light") 
+    // document.getElementById("college").classList.add("text2")
+    // document.getElementById("college").classList.remove("text")
+    // document.getElementById("college").classList.remove("text3")
+  }
+</script>
+<div class="body" id="payal"> box1</div>
+<button onclick="light()">light</button>
+<button onclick="dark()">Dark</button>
+<script>
+  function light(){
+    document.getElementById("payal").classList.add("light")
+    document.getElementById("box").classList.remove("dark")
+  }
+  function light(){
+    document.getElementById("payal").classList.add("dark")
+    document.getElementById("box").classList.remove("light") 
+  }
+</script>
+</body>
+</html>

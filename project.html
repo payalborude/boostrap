@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+       .visit{
+        font-size:35px;
+        margin-top:59px;
+        margin-left:360px;
+       }
+       .visite{
+        font-size:20px;
+        margin-left:300px;
+       }.section{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-evenly;
+
+       }
+       .card{
+        background-color: rgb(233, 234, 235);
+        padding: 30px;
+        cursor: pointer;
+        transition:2s;
+       }.card:hover{
+transform: scale(1.1);
+background-color: #3B5998;
+color: #F9F9F9;
+       }
+       .navlinks{
+        margin-left:500px;
+       }
+       .Guidedtours{
+        margin-top:50px;
+       margin-left: 300px;
+       font-size:30px;
+       }
+       .content{
+        font-size:18px;
+         margin-top:32px; 
+       margin-left: 60px;
+       margin-right:250px;
+        /* margin: 150px; */
+        z-index: 2000;
+       }.before{
+        margin-left:650px;
+        font-size: 30px;
+        margin-top:50px;
+       }.pick{
+        margin-left:520px;
+        font-size: 20px;
+       }.form-control{
+        width: 700px;
+        background-color: brown;
+        color: aliceblue;
+        text-align: center;
+        margin-left:400PX;
+        margin-top:30PX;
+       }.div{
+        height:400px;
+        width:500px;
+        border:1px solid black;
+        background-color: brown;
+        font-size:16px;
+        color: aliceblue;
+        text-align: center;
+        margin-top:0px;
+       }.leafe{
+        display: flex;
+       margin-left: 260px;
+       margin-top: 50px;
+       z-index:3000;
+       }.what{
+margin-top:90px;
+font-size:30px;
+       }.btn{
+    margin-top:-0px;
+    margin-right:40px;
+    background-color: aliceblue;
+color: black;
+border: none;
+  }.btn:hover{
+color:black;
+background-color: brown;
+  }.btns{
+    background-color: rgb(14, 49, 60);
+    color:white;
+  } 
+  .btns:hover{
+background-color:  rgb(215, 250, 249) ;
+color: black;
+  }.btnss{
+    background-color: aliceblue;
+    color: black;
+  }.btnss:hover{
+    background-color: rgb(14, 49, 60 );
+    color: aliceblue;
+  }
+  .light{
+    height:400px;
+        width:500px;
+        border:0px solid black;
+        font-size:16px;
+        color: rgb(25, 227, 200);
+        text-align: center;
+        margin-top:0px;
+    background-color: rgb(215, 250, 249);
+     }.dark{
+      height:400px;
+        width:500px;
+        border:0px solid black;
+        background-color: rgb(18, 57, 62);
+        font-size:16px;
+        color: aliceblue;
+        text-align: center;
+        margin-top:0px;
+     }.visitimg{
+      display: flex;
+      margin-top:80px;
+      justify-content: space-evenly;
+      
+     }.visitimg1{
+      
+      cursor: pointer;
+      transition:2s;
+
+     }.visitimg1:hover{
+      transform: scale(1.1);
+     }
+     .school{
+      display: flex;
+      justify-content: space-evenly;
+      color: rgb(10, 50, 52);
+      font-size:30px; 
+      margin-top:30px;      
+     }.school:hover{
+      color: brown;
+     }
+     .group{
+      display: flex;
+      justify-content: space-evenly;
+      
+     }.visitor{
+      margin-right:300px;
+     }.chelsea{
+      margin-right: 300px;
+     }.navbar-nav{
+      margin-left: 0px;
+     }
+     h2 {  
+padding: 25px 0;  
+text-align: center;  
+color: #fff;  
+background: #7c8490;  
+}  
+footer {  
+ background: rgb(5, 44, 51);  
+  color: white;  
+  margin-top:100px;  
+}  
+footer a {  
+  color: #fff;  
+  font-size: 14px;  
+  transition-duration: 0.2s;  
+}  
+footer a:hover {  
+  color: #FA944B;  
+  text-decoration: none;  
+}  
+.copy {  
+  font-size: 12px;  
+  padding: 10px;  
+  border-top: 1px solid #FFFFFF;  
+}  
+.footer-middle {  
+  padding-top: 2em;  
+  color: white;  
+}  
+ul.social-network {  
+  list-style: none;  
+  display: inline;  
+  margin-left: 0 !important;  
+  padding: 0;  
+}  
+ul.social-network li {  
+  display: inline;  
+  margin: 0 5px;  
+}  
+  
+.social-network a.icoFacebook:hover {  
+  background-color: #3B5998;  
+}  
+.social-network a.icoLinkedin:hover {  
+  background-color: #007bb7;  
+}  
+.social-network a.icoFacebook:hover i  
+{  
+  color: #fff;  
+}  
+.social-network a.icoLinkedin:hover i {  
+  color: #fff;  
+}  
+.social-network a.socialIcon:hover {  
+  color: #44BCDD;  
+}  
+.socialHoverClass {  
+  color: #44BCDD;  
+}  
+.social-circle li a {  
+  display: inline-block;  
+  position: relative;  
+  margin: 0 auto 0 auto;  
+  -moz-border-radius: 50%;  
+  -webkit-border-radius: 50%;  
+  border-radius: 50%;  
+  text-align: center;  
+  width: 30px;  
+  height: 30px;  
+  font-size: 15px;  
+}  
+.social-circle li i {  
+  margin: 0;  
+  line-height: 30px;  
+  text-align: center;  
+}  
+.social-circle li a:hover i  
+{  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.triggeredHover {  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.social-circle i {  
+  color: #595959;  
+  -webkit-transition: all 0.8s;  
+  -moz-transition: all 0.8s;  
+  -o-transition: all 0.8s;  
+  -ms-transition: all 0.8s;  
+  transition: all 0.8s;  
+}  
+.social-network a {  
+  background-color: #F9F9F9;  
+}  
+.social-network a:hover {  
+background: #ff304d;  
+} .color{
+  width:fit-content;
+  background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZycG9wcGllc19yZWRfZmllbGRfcG9wcHktaW1hZ2Uta3liY3hxZnouanBn.jpg' );
+  background-repeat:no-repeat ;
+  margin-left:400px;
+}
+
+  </style>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="body">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-Secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://img.freepik.com/premium-vector/green-plant-logo-with-hand-circle_898845-4.jpg" alt="" height="50px" width="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./project.html">visit</a>
+                  <a class="nav-link active" href="./visit.html">Support Us</a>
+                  <a class="nav-link active" href="#plant.html">plant Science</a>
+                  <a class="nav-link active" href="./school.html" >school+learing</a>
+                  <a class="nav-link active" href="./login.html" >login</a>
+                  <a class="nav-link active" href="./hire.html" >H</a>
+                    
+
+                     
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </nav>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://img.freepik.com/premium-photo/background-autumn-leaves-branches-tree_769803-1456.jpg" class="d-block w-100" alt="..."  height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/668288668/photo/green-leaves-background.jpg?s=612x612&w=0&k=20&c=0u4c95Hijsi6ErfMyyRRY7w1jDyeVK_US0TYvnef73Q=" class="d-block w-100" alt="..." height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/premium-photo/background-autumn-leaves-branches-tree_769803-1456.jpg" class="d-block w-100" alt="..." height="600px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <a class="nav-links active" aria-current="page" href="project.html">visit</a>
+<div>
+    <p class="visit">Visit</p>
+    <p class="visite">There is lots to see and do on a visit to Chelsea Physic Garden. Here’s some essential information to help plan your trip.</p>
+</div>
+<section class="section">
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Book tickets</h5>
+      <p class="card-text">Find out more about time slots and ticket prices. The Glasshouses are included in your ticket. </p><br>
+      <a href="#" class="btn btn-primary">Buy ticket</a>
+    </div>
+  </div>
+  
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Opening times</h5>
+      <p class="card-text">Open Sunday - Friday, 11am - 5pm (last entry 30 minutes before closing).</p><br><br>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Become a Friend</h5>
+      <p class="card-text">Friends of the Garden benefit from free entry to the Garden throughout the year for themselves and a guest
+      </p>
+      <a href="#" class="btn btn-primary">Find out More</a>
+    </div>
+  </div>
+</section>
+ <div class="color">
+<p class="Guidedtours">Guided Tours</p>
+<p class="content">We offer guided tours of Chelsea Physic Garden from Sunday to Friday, <br> led by our friendly and experienced volunteers. Tours run <br> throughout the day. As our tours are delivered by our volunteer team, <br> we cannot guarantee they will be running on the day or at the <br> time of your visit, and we recommend that you check with a <br> member of staff on the day of your visit. Tours last around 45 minutes <br> and the cost is included with your admission to the Garden.</p></div> 
+<p class="before">Before you arrive</p>
+<p class="pick">Pick up a map or trail and read our visitor guidance</p>
+</div>
+<input class="form-control" type="text" value="MAP OF THE GARDEN" aria-label="Disabled input example"MAP OF THE GARDEN>
+<div class="leafe" data-aos="zoom-out"data-aos-duration='3000'        >
+<div class="div"         ><h4 class="what">What's On</h4> There Is always something to se at Garden. <br>Fromour seasonal plant displays and permanent  <br>collections  to family activities and adult workshops,<br> there is  something for everyone.</h4><br><br><br><br>
+  <button type="button" class="btn btn-primary btn-lg">UPCOMEING EVENTS</button></div>
+<img src="https://cdn.pixabay.com/photo/2020/03/25/22/02/dried-leaves-4968705_640.jpg" alt="" height="400px" width="500px">
+</div>
+<div class="leafe" data-aos="fade-up"
+data-aos-duration="3000"     >
+<img  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/d3/84/5a/the-physic-garden-cafe.jpg?w=1200&h=-1&s=1" alt="" height="400px" width="500px">
+<div class="light">
+  <p class="what">The Physic Garden Café
+  </p> The Physic Garden Café serves hot and <br> cold drinks, cakes, pastries <br> light bites for sit down or takeaway, and <br> also offers sit down dining at lunch</h4><br><br><br><br>
+  <button type="button" class="btns btn-primary btn-lg">READ MORE</button></div>
+</div>
+</div>
+<div class="display">
+  <div  class="visitimg">
+  <div  data-aos="fade-up-right" data-aos-duration='3000' class="visitimg1"   ><img src="https://www.chukkimane.com/wp-content/uploads/2016/11/school-day-outing-near-bangalore.jpg" alt="" height="400px" width="700px"></div>
+  <div data-aos="fade-up-left"  data-aos-duration='3000'  class="visitimg1"        ><img src="https://people.com/thmb/flx_Cizdjf9MdK6SlnEn7I2zLek=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/group-vacation-tout-072523-f3827a4393484e9d8f1fccf202cb63cf.jpg" alt="" height="400px" width="700px"></div>
+</div>
+<div class="school">
+  <p class="visitor">School visit</p>
+<p>Group visit</p>
+</div>
+<div class="group">
+  
+  <p class="chelsea">Chelsea Physic Garden has a well established educational  programme <br> that celebrates the natural  We provide unique, fun and valuablebr
+     learning <br> experiences that, not only meet national curriculum requirements <br>
+    , but provide a memorable day out.</p>
+  <p>We are delighted to be open for pre-booked group visits of 15 or <br> more people. Please visit our group visits page for further <br> information and guidance  on planning your trip. Discounted tickets  <br>for  groups of 10 or more. </p>
+
+</div>
+<div  class="visitimg">
+  <div  data-aos="fade-up-right" data-aos-duration='3000'     ><img class="visitimg1" src="https://www.thepresidiumschool.com/news_image/0hisar-garden-visit-september-2018-0001.jpg" alt="" height="400px" width="700px"></div>
+  <div  data-aos="fade-up-left"  data-aos-duration='3000'        ><img class="visitimg1"      src="https://ngs.org.uk/app/uploads/2022/08/Cropped-Lead-scaled.jpg" alt="" height="400px" width="700px"></div>
+</div>
+<div class="school">
+  <p class="visitor">Visitor guidelines  </p>
+<p >Accessibility</p>
+</div>
+<div class="group">
+  <p   class="chelsea">We would like to say a huge thank you to everyone <br>for their support during our closure and are <br> excited to welcome Friends and Visitors to the garden again.</p>
+  <p>We aim to be accessible to all and to help you plan your <br> visit; getting around the garden, guide and assistance dogs,<br> accessible parking etc. </p>
+
+</div>
+<footer class="mainfooter" role="contentinfo">  
+  <div class="footer-middle">  
+  <div class="container">  
+    <div class="row">  
+      <div class="col-md-3 col-sm-6">  
+        <div class="footer-pad">  
+          <h4> care customer</h4>  
+          <ul class="list-unstyled">  
+            <li> <p href="#"> </p> </li>  
+            <li> <p href="#">Payment Center</p></li>  
+            <li> <p href="#"> Contact Directory </p></li>  
+            <li> <p href="#">Forms</p></li>  
+            <li> <p href="#">News and Updates</p></li>  
+            <li> <p href="#">FAQs</p></li>  
+          </ul>  
+        </div>  
+      </div>  
+      <div class="col-md-3 col-sm-6">  
+        <div class="footer-pad">  
+          <h4> cheak opening Garden</h4>  
+          <ul class="list-unstyled">  
+            <li><p href="#"> Blog </p> </li>  
+            <li><p href="#">Accessibility</p> </li>  
+            <li><p href="#">Disclaimer</p></li>  
+            <li><p href="#">Privacy Policy</p></li>  
+            <li><p href="#">FAQs</p></li>  
+            <li><p href="#">Webmaster</p></li>  
+          </ul>  
+        </div>  
+      </div>  
+      <div class="col-md-3 col-sm-6">  
+        <div class="footer-pad">  
+          <h4> Garden park </h4>  
+          <ul class="list-unstyled">  
+            <li> <p href="#"> Parks and Recreation </p> </li>  
+            <li> <p href="#"> Public Works </p> </li>  
+            <li> <p href="#">Police Department</p> </li>  
+            <li> <p href="#"> Fire </p> </li>  
+            <li> <p href="#"> Mayor and City Council </p> </li>  
+          </ul>  
+        </div>  
+      </div>  
+        <div class="col-md-3">  
+            <h4> Follow Us </h4>  
+                <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" height="40px" width="40px">
+                <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" alt="" height="40px" width="40px">   
+                <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt=""height="40px" width="40px" >  
+                <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="" height="40px" width="40px">   
+    </div>  
+    </div>  
+    <div class="row">  
+    <div class="col-md-12 copy">  
+    <p class="text-center"> � Copyright 2021 - Company Name.  All rights reserved. </p>  
+    </div>  
+    </div>  
+  </div>  
+  </div>  
+</footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+    .first {
+color: aliceblue;
+font-size:30px;
+margin-right:700px;
+margin-top:-400px;
+font-family:content '\F1538';
+cursor: pointer;
+transition:2s;
+    }.first:hover{
+    transform: scale(1.1);
+    }
+    
+    .first1{
+      font-size:20px;
+      color: aliceblue;
+      margin-right:700px;
+      margin-top:50px;
+    }.Explore {
+      font-size:30px;
+      margin-top:70px;
+      
+    }.Exploreimg{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top:60px;
+    }.Exploreimgs{
+      background-color: beige;
+      padding-top:50px;
+      padding-bottom:50px;
+    }.established{
+      margin-top:-290px;
+      margin-left:200px;
+    }.open{
+      margin-left:200px;
+    }.btn{
+      font-size:15px;
+      margin-top:30px;
+      margin-left:300px;
+      background-color:brown;
+      color: aliceblue;
+    }
+    .img{
+    
+     margin-left:150px;
+     cursor: pointer;height: 400px;
+            width: 700px;
+            border: 2px solid black;
+            /* background-color: #9c1c1c; */
+            background-size: cover;
+            transition:2s;
+background-image: url('https://i2-prod.essexlive.news/incoming/article8826499.ece/ALTERNATES/s615/0_Christmas-Show-4jpeg.jpg');
+     
+    }.img:hover{
+      /* transform: scale(0.9); */
+            height: 400px;
+            width: 700px;
+            border: 2px solid black;
+            /* background-color: #9c1c1c; */
+            background-image: url('https://www.helenrollason.org.uk/wp-content/uploads/2023/06/DSC_1847-scaled.jpg');
+            background-size: cover;
+            cursor: pointer;
+    }
+    .display{
+      display: flex;
+      margin-top:100px;
+    } .dark{
+    height:400px;
+        width:500px;
+        border:0px solid black;
+        background-color: rgb(18, 57, 62);
+        font-size:16px;
+        color: aliceblue;
+        text-align: center;
+        margin-top:0px;
+       
+    }.what{
+      margin-top:60px;
+    }.btnn{
+      font-size:15px;
+      background-color: aliceblue;
+      color: black;
+     
+    }.btnn:hover{
+      background-color:rgb(18, 57, 62) ;
+      color: aliceblue;
+    }.card {
+      margin-top:60px;
+      height:460px;
+      width:600px;
+    }.cards{
+      display: flex;
+      justify-content:space-evenly;
+    }.form-control{
+        width: 990px;
+        height:50px;
+        border:2px solid rgb(102, 4, 4);
+        color:rgb(102, 4, 4);
+        text-align: center;
+        margin-left:200PX;
+        margin-top:60PX;}
+    .form-control:hover{
+      background-color:rgb(102, 4, 4) ;
+      color: aliceblue;
+    }.visitimg{
+      display: flex;
+      margin-top:80px;
+      justify-content: space-evenly;
+      
+     }.visitimg1{
+      height:400px;
+      width:600px;
+      border:1px solid black;
+      cursor: pointer;
+      transition:2s;
+
+     }.visitimg1:hover{
+      transform: scale(1.1);
+
+     }
+     .school{
+      display: flex;
+      justify-content: space-evenly;
+      color: rgb(10, 50, 52);
+      font-size:30px; 
+      margin-top:30px;      
+     }.school:hover{
+      color: brown;
+     }
+     .group{
+      display: flex;
+      justify-content: space-evenly;
+      
+     }.visitor{
+      margin-right:300px;
+     }.chelsea{
+      margin-right:250px;
+     }.font{
+      color: white;
+      height:400px;
+      background-image: url('https://www.roseamongthorns.florist/wp-content/uploads//revslider/boxedslider/slide3.jpg');
+      filter:blur(1.9);
+     }
+     .support{
+      padding-top:80px;
+      font-size: 35px;
+      
+      margin-left:600px;
+      
+     }.us{
+      margin-top:30px;
+      margin-left:400px;
+      font-size:20px;
+     }footer {  
+ background: rgb(5, 44, 51);  
+  color: white;  
+  margin-top:100px;  
+}  
+footer a {  
+  color: #fff;  
+  font-size: 14px;  
+  transition-duration: 0.2s;  
+}  
+footer a:hover {  
+  color: #FA944B;  
+  text-decoration: none;  
+}  
+.copy {  
+  font-size: 12px;  
+  padding: 10px;  
+  border-top: 1px solid #FFFFFF;  
+}  
+.footer-middle {  
+  padding-top: 2em;  
+  color: white;  
+}  
+ul.social-network {  
+  list-style: none;  
+  display: inline;  
+  margin-left: 0 !important;  
+  padding: 0;  
+}  
+ul.social-network li {  
+  display: inline;  
+  margin: 0 5px;  
+}  
+  
+.social-network a.icoFacebook:hover {  
+  background-color: #3B5998;  
+}  
+.social-network a.icoLinkedin:hover {  
+  background-color: #007bb7;  
+}  
+.social-network a.icoFacebook:hover i  
+{  
+  color: #fff;  
+}  
+.social-network a.icoLinkedin:hover i {  
+  color: #fff;  
+}  
+.social-network a.socialIcon:hover {  
+  color: #44BCDD;  
+}  
+.socialHoverClass {  
+  color: #44BCDD;  
+}  
+.social-circle li a {  
+  display: inline-block;  
+  position: relative;  
+  margin: 0 auto 0 auto;  
+  -moz-border-radius: 50%;  
+  -webkit-border-radius: 50%;  
+  border-radius: 50%;  
+  text-align: center;  
+  width: 30px;  
+  height: 30px;  
+  font-size: 15px;  
+}  
+.social-circle li i {  
+  margin: 0;  
+  line-height: 30px;  
+  text-align: center;  
+}  
+.social-circle li a:hover i  
+{  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.triggeredHover {  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.social-circle i {  
+  color: #595959;  
+  -webkit-transition: all 0.8s;  
+  -moz-transition: all 0.8s;  
+  -o-transition: all 0.8s;  
+  -ms-transition: all 0.8s;  
+  transition: all 0.8s;  
+}  
+.social-network a {  
+  background-color: #F9F9F9;  
+}  
+.social-network a:hover {  
+background: #ff304d; }
+    
+     
+
+     
+    
+    </style>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-Secondary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://img.freepik.com/premium-vector/green-plant-logo-with-hand-circle_898845-4.jpg" alt="" height="50px" width="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="./project.html">visit</a>
+          <a class="nav-link active" href="./visit.html">Support Us</a>
+          <a class="nav-link active" href="./plant.html">plant Science</a>
+          <a class="nav-link active" href="./school.html" >school+learning</a>
+          <a class="nav-link active" href="./login.html" >login</a>
+              <div >
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div >
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+  </nav>
+    
+      
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://chihuly-assets.s3.amazonaws.com/images/_1300x750_crop_center-center_none/20230818_Chihuly_Fiechtner_120.jpg" class="d-block w-100" alt="..." height="600px" style="opacity: 10;" >
+            <div data-aos="zoom-in-left"data-aos-duration='3000'        class="carousel-caption d-none d-md-block">
+              <p class="first">For the botanically curious </p>
+              <p class="first1">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+         
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/premium-photo/happy-father-his-child-tending-plant-vegetables-their-backyard-family-quality-time-plant-vegetables-garden_401949-8704.jpg" class="d-block w-100" alt="..."height="600px" style="opacity: 10;" >
+            <div data-aos="zoom-in-right"data-aos-duration='3000'        class="carousel-caption d-none d-md-block">
+              <p class="first">For the Whole Family</p>
+              <p class="first1">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section class="Exploreimgs">
+      <div class="Exploreimg"  >
+        <p class="Explore">Explore London's oldest botanic garden</p>
+        <div data-aos="zoom-out"data-aos-duration="2500">
+        <img src="https://images.myguide-cdn.com/cairns/companies/cairns-insect-photography-tour-of-cairns-botanic-gardens/large/cairns-insect-photography-tour-of-cairns-botanic-gardens-3440939.jpg" alt="" height="400px" width="500px"></div>
+      </div></section>
+      <p class="established">Established in 1673, by the Worshipful Society of  Apothecaries of London, <br>Chelsea Physic Garden is  home to over 4,500 medicinal, edible and useful <br> Open Sunday – Friday, visitors can explore the historic glasshouses,<br> discover the plant collection, or simply relax and enjoy the four-acres of green<br> space  nrbr
+        in central London.</p><h6 class="open">Open: Sunday – Friday,11am – 4pm.<br>
+          Tickets: £5 – £11.</h6>
+          <button type="button" class="btn btn- btn-lg">PLAN YOUR VISIT</button>
+         <div class="display">
+          <div class="img"></div>
+          <div class="dark"><h4 class="what">Christmas Fair
+          </h4>  <br>There Is always something to se at Garden. <br>Fromour seasonal plant displays and permanent  <br>collections  to family activities and adult workshops,<br> there is  something for everyone.</h4><br><br><br><br>
+            <button type="button" class="btnn btn-primary btn-lg">READ MORE</button></div>
+          </div>
+          <div class="cards">
+          <div  div data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" data-aos-duration='3000'     class="card" style="width:400px;">
+            <img src="https://khealth.com/wp-content/uploads/2021/07/allergies-seasonal-remedies.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Living Medicine: Coughs,cold abd Allergies</h5>
+              <p class="card-text">Sunday 3 November 2024. 10:45am-4:30pm125</p>
+              <p class="card-text">Living Medicine</p>
+            </div>
+          </div>
+          <div  data-aos="zoom-in-up" data-aos-duration='3000'     class="card" style="width: 400px;">
+            <img src="https://www.helpfulholidays.co.uk/blog/wp-content/uploads/sites/10/2019/02/Christmas-treee.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Christmas Fair 2024</h5>
+              <p class="card-text">Thursday 21-Sunday 24 November</p>
+              <p class="card-text">London's most Enchanting christmas Fair is back at chelsea Physic Garden for another fabulous year.</p>
+              
+            </div>
+          </div>
+          <div div data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" data-aos-duration='3000'      class="card" style="width:400px;">
+            <img src="https://www.lingoda.com/blog/wp-content/uploads/2022/11/what-is-santa-claus-real-name-e1667923862259-768x399.jpg" height="270px" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Father Christmas Storytelling </h5>
+              <p>Saturday 30 November, sunday 1, saturday7,saturday8,saturday14,saturday15</p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <input class="form-control" type="text" value="VIEW MORE EVENTS ON OUR WHAT ON PAGE" aria-label="Disabled input example"VIEW MORE EVENTS ON OUR WHAT ON PAGE>
+        <div  class="visitimg">
+          <div   class="visitimg1"   ><img src="https://www.palmers.co.nz/cdn/shop/articles/Houseplants-in-winter.jpg?v=1662517892" alt="" height="400px" width="600px"></div>
+          <div   class="visitimg1"        ><img src="https://www.thelondoneconomic.com/wp-content/uploads/2024/07/IGC_Nikita-Pathakji_JHenderson_53_TICKETED-CUSTOMERS-2048x1332.jpg" alt="" height="400px" width="600px"></div>
+        </div>
+        <div class="school">
+          <p class="visitor">Plant Collection</p>
+        <p>The Physic Garden Café
+        </p>
+        </div>
+        <div class="group">
+          
+          <p class="chelsea">Our incredible living plant collections are among the largest <br> and most diverse in the world.</p>
+          <p>The Physic Garden Café is open for a wide selection of seasonal  <br>food and drink. Enjoy a delicious salad, a bowl of soup or maybe a <br> glass of bubbles in the idyllic setting of Chelsea Physic Garden. </p>
+        
+        </div>
+        <div  class="visitimg">
+          <div   class="visitimg1"   ><img src="https://livhealth.org/wp-content/uploads/2024/07/blog-family-fun-ft.jpg" alt=""  height="400px" width="600px"           ></div>
+          <div class="visitimg1"        ><img src="https://www.ednavigator.org/assets/resource-images/_850x566_crop_center-center_82_line_ns/College_Students_Walking_web-1.jpg" alt="" height="400px" width="600px"></div>
+        </div>
+        <div class="school">
+          <p class="visitor">Fun for families</p>
+        <p>Resources for schools</p>
+        </div>
+        <div class="group">
+          
+          <p class="chelsea">Chelsea Physic Garden has a well established educational  programme <br> that celebrates the natural  We provide unique, fun and valuablebr
+             learning <br> experiences that, not only meet national curriculum requirements <br>
+            , but provide a memorable day out.</p>
+          <p>Learning resources are archived here for you to <br> This includes scavenger hunts, how to activities and plant fact files
+          </p>
+        </div>
+        <div class="font">
+          <p class="support">Support us</p><P class="us">Since 1673 Chelsea Physic Garden has occupied four acres of land on the edge of the <br> First established by the Apothecaries in order to grow medicinal plants, this <br> extraordinary garden in London has had wide reaching impact around the world. <br> Your support is vital in preserving the history of London for many more <br> generations to come. Join our community of supporters today.</P>
+          <div class="d-grid gap-2 d-md-block">
+          </div>
+        </div>
+        <footer class="mainfooter" role="contentinfo">  
+          <div class="footer-middle">  
+          <div class="container">  
+            <div class="row">  
+              <div class="col-md-3 col-sm-6">  
+                <div class="footer-pad">  
+                  <h4> Care Customer</h4>  
+                  <ul class="list-unstyled">  
+                    <li> <p href="#"> </p> </li>  
+                    <li> <p href="#">Payment Center</p></li>  
+                    <li> <p href="#"> Contact Directory </p></li>  
+                    <li> <p href="#">Forms</p></li>  
+                    <li> <p href="#">News and Updates</p></li>  
+                    <li> <p href="#">FAQs</p></li>  
+                  </ul>  
+                </div>  
+              </div>  
+              <div class="col-md-3 col-sm-6">  
+                <div class="footer-pad">  
+                  <h4> cheaking garden</h4>  
+                  <ul class="list-unstyled">  
+                    <li><p href="#"> Blog </p> </li>  
+                    <li><p href="#">Accessibility</p> </li>  
+                    <li><p href="#">Disclaimer</p></li>  
+                    <li><p href="#">Privacy Policy</p></li>  
+                    <li><p href="#">FAQs</p></li>  
+                    <li><p href="#">Webmaster</p></li>  
+                  </ul>  
+                </div>  
+              </div>  
+              <div class="col-md-3 col-sm-6">  
+                <div class="footer-pad">  
+                  <h4> garden park</h4>  
+                  <ul class="list-unstyled">  
+                    <li> <p href="#"> Parks and Recreation </p> </li>  
+                    <li> <p href="#"> Public Works </p> </li>  
+                    <li> <p href="#">Police Department</p> </li>  
+                    <li> <p href="#"> Fire </p> </li>  
+                    <li> <p href="#"> Mayor and City Council </p> </li>  
+                  </ul>  
+                </div>  
+              </div>  
+                <div class="col-md-3">  
+                    <h4> Follow Us </h4>  
+                        <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" height="40px" width="40px">
+                        <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" alt="" height="40px" width="40px">   
+                        <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt=""height="40px" width="40px" >  
+                        <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="" height="40px" width="40px">   
+            </div>  
+            </div>  
+            <div class="row">  
+            <div class="col-md-12 copy">  
+            <p class="text-center"> � Copyright 2021 - Company Name.  All rights reserved. </p>  
+            </div>  
+            </div>  
+          </div>  
+          </div>  
+        </footer>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

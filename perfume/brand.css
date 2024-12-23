@@ -1,0 +1,88 @@
+.nav-link {
+    margin-left:30px;
+    
+   }
+   @media screen and(max-width:500px) {
+    .nav-link {
+       color: brown;
+     
+       }
+   }
+.first{
+    color: aliceblue;
+    font-size:17px;
+    margin-left:500px;
+
+}.BRAND{
+    text-align: center;
+    margin-top:40PX;
+}.brandimg{
+    margin-top: 80px;
+    margin-left:150px;
+}.text{
+    display:flex;
+}.cantent{
+    margin-top: 200px;
+    margin-left:200px;
+}.flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:50PX;
+}.BRANDd{
+    text-align: center;
+    margin-top:80PX;}
+    .mainfooter{
+        padding: 90px;
+        color: #fff;
+        background-color: #0c0c0c;
+    }.footercontent{
+        text-align: center;
+    }.form-control {
+        width:400px;
+        
+    }.d-flex{
+       margin-left:450px;
+       margin-top:40px;
+    }.line{
+       height:2px;
+       background-color: #fff;
+       
+    }.name{
+    display: flex;
+    justify-content: space-evenly;
+    }.media{
+        height:40px;
+        width:50px;
+        border:1px solid white;
+        border-radius:50px;
+        background-color: #f4f4f4;
+        margin-left:30px;
+    }.section{
+        display: flex;
+        margin-left:140px;
+        margin-top:30px;
+    }
+    .insta{
+        margin-top:3px;
+        margin-left:4px;
+    }.footercontent1{
+        margin-left:300px;
+        flex-direction:row;
+    }.contact{
+        margin-top:50px;
+        display: flex;
+        
+    }.contact1{
+    margin-left:30px;
+    }.contact2{
+    margin-left: 50px;
+    }.contact3{
+        margin-left:50px;
+    }.footercontent1{
+        margin-left:500px;
+        margin-top:30px;
+       
+    }.footerimg{
+        margin-left:480px;
+        margin-top:20px;
+    }

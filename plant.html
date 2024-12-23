@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      .plant{
+        font-size:36px;
+        margin-left:250px;
+        margin-top:59px;
+      }.science{
+        margin-left:200px;
+        font-size:18px;
+      } .img{
+    
+    margin-left:150px;
+    cursor: pointer;height: 400px;
+           width: 700px;
+           ;
+           /* background-color: #9c1c1c; */
+           background-size: cover;
+           transition:2s;
+background-image: url('https://www.thegardenisland.com/wp-content/uploads/2019/04/web1_BotanicalArt2new.jpg');
+    
+   }.img:hover{
+     /* transform: scale(0.9); */
+           height: 400px;
+           width: 700px;
+           
+           /* background-color: #9c1c1c; */
+           background-image: url('https://images.seattletimes.com/wp-content/uploads/2019/09/urn-publicid-ap-org-76b846f1c0504d27aa0f301c068a9d01Gardening_Botanical_Art_07136.jpg?d=780x593');
+           background-size: cover;
+           cursor: pointer;
+   }
+   .display{
+     display: flex;
+     margin-top:100px;
+   } .dark{
+   height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(238, 239, 240);
+       font-size:16px;
+       color: rgb(13, 13, 13);
+       text-align: center;
+       margin-top:0px;
+      
+   }.light{
+    height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(171, 209, 248);
+       font-size:16px;
+       color: rgb(13, 13, 13);
+       text-align: center;
+    
+   }
+   .what{
+     margin-top:60px;
+   }.btnn{
+     font-size:15px;
+     background-color: rgb(7, 43, 43);
+     color: rgb(252, 251, 251);
+    
+   }.btnn:hover{
+     background-color:rgb(18, 57, 62) ;
+     color: aliceblue;}
+     .div{
+        height:400px;
+        width:500px;
+        border:none solid black;
+        background-color: rgb(236, 208, 208);
+        font-size:16px;
+        color: rgb(13, 13, 14);
+        text-align: center;
+        margin-top:0px;
+       }.leafe{
+        display: flex;
+       margin-left:130px;
+       margin-top: 50px;
+       z-index:3000;
+       }.what{
+margin-top:90px;
+font-size:30px;
+       }.btn{
+    margin-top:-0px;
+    margin-right:40px;
+    background-color: rgb(11, 29, 45);
+color: rgb(235, 232, 232);
+border: none;
+  }.btn:hover{
+color:black;
+background-color: rgb(241, 223, 223);
+  }.btns{
+    background-color: rgb(14, 49, 60);
+    color:white;
+  } 
+  .btns:hover{
+background-color:  rgb(215, 250, 249) ;
+color: black;
+  }.btnss{
+    background-color: aliceblue;
+    color: black;
+    font-size:15px;
+  }.btnss:hover{
+    background-color: rgb(14, 49, 60 );
+    color: aliceblue;}
+  .btnn1{
+    background-color: aliceblue;
+    color: black;
+    font-size:15px;
+  }.btnn1:hover{
+    background-color:  rgb(171, 209, 248);
+    color:black;
+  }
+    .img2{
+      margin-left:150px;
+    cursor: pointer;
+    height: 400px;
+           width: 700px;
+
+            
+           /* background-color: #9c1c1c; */
+           background-size: cover;
+           transition:2s;
+background-image: url('https://res.cloudinary.com/itb-database/image/upload/s--olWR1t9T--/c_fill,dpr_auto,f_auto,q_auto:eco,w_1280/v1/Places/zmrpxdjhvb42aql6klzd');
+    
+    }
+    .img2:hover{
+      /* transform: scale(0.9); */
+      height: 400px;
+           width: 700px;
+           
+           /* background-color: #9c1c1c; */
+           background-image: url('https://www.botanickateplice.cz/content/files/images/photogalleries/index-seminum/p688239.jpg');
+           background-size: cover;
+           cursor: pointer;
+    }.images{
+      display: flex;
+      margin-top:70px;
+      margin-left:60px;
+      justify-content: space-evenly;
+    }.weather{
+      font-size:30px;
+      margin-top:-40px;
+      cursor: pointer;
+      /* transition:2s; */
+    }.weather:hover{
+color: brown;
+    }.weathereffect{
+      margin-top: -40px;
+      font-size:30px;
+      cursor: pointer;
+    }
+    .weather1{
+      margin-right:90px;
+    }
+    .weathereffect:hover{
+/* transform: scale(1.1); */
+color: brown;
+    }.largest{
+      background-image: url('');
+    }
+    footer {  
+ background: rgb(5, 44, 51);  
+  color: white;  
+  margin-top:100px;  
+}  
+footer a {  
+  color: #fff;  
+  font-size: 14px;  
+  transition-duration: 0.2s;  
+}  
+footer a:hover {  
+  color: #FA944B;  
+  text-decoration: none;  
+}  
+.copy {  
+  font-size: 12px;  
+  padding: 10px;  
+  border-top: 1px solid #FFFFFF;  
+}  
+.footer-middle {  
+  padding-top: 2em;  
+  color: white;  
+}  
+ul.social-network {  
+  list-style: none;  
+  display: inline;  
+  margin-left: 0 !important;  
+  padding: 0;  
+}  
+ul.social-network li {  
+  display: inline;  
+  margin: 0 5px;  
+}  
+  
+.social-network a.icoFacebook:hover {  
+  background-color: #3B5998;  
+}  
+.social-network a.icoLinkedin:hover {  
+  background-color: #007bb7;  
+}  
+.social-network a.icoFacebook:hover i  
+{  
+  color: #fff;  
+}  
+.social-network a.icoLinkedin:hover i {  
+  color: #fff;  
+}  
+.social-network a.socialIcon:hover {  
+  color: #44BCDD;  
+}  
+.socialHoverClass {  
+  color: #44BCDD;  
+}  
+.social-circle li a {  
+  display: inline-block;  
+  position: relative;  
+  margin: 0 auto 0 auto;  
+  -moz-border-radius: 50%;  
+  -webkit-border-radius: 50%;  
+  border-radius: 50%;  
+  text-align: center;  
+  width: 30px;  
+  height: 30px;  
+  font-size: 15px;  
+}  
+.social-circle li i {  
+  margin: 0;  
+  line-height: 30px;  
+  text-align: center;  
+}  
+.social-circle li a:hover i  
+{  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.triggeredHover {  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.social-circle i {  
+  color: #595959;  
+  -webkit-transition: all 0.8s;  
+  -moz-transition: all 0.8s;  
+  -o-transition: all 0.8s;  
+  -ms-transition: all 0.8s;  
+  transition: all 0.8s;  
+}  
+.social-network a {  
+  background-color: #F9F9F9;  
+}  
+.social-network a:hover {  
+background: #ff304d;  
+}
+    </style>
+</head>
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-Secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://img.freepik.com/premium-vector/green-plant-logo-with-hand-circle_898845-4.jpg" alt="" height="50px" width="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link " aria-current="page" href="./project.html">visit</a>
+                  <a class="nav-link " href="./visit.html">Support Us</a>
+                  <a class="nav-link  active" href="./plant.html">plant Science</a>
+                  <a class="nav-link active" href=".//school.html" >school+learning</a>
+                  <a class="nav-link active" href="./login.html" >login</a>
+                      <div >
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./hire.html">hire</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">School +learning </a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div >
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </nav>
+    </div>
+     
+          <div class="">
+            <img src="https://psla.media.uconn.edu/wp-content/uploads/sites/3027/2023/04/Spring-valley-banner-scaled-1500x500.jpg" class="d-block" alt="...">
+          </div>
+          <p class="plant">Plant science</p>
+          <p class="science">The Garden itself is an exciting resource for researchers and professionals, with over 4,000 plant taxa in the botanic  <br>garden, including a collection of threatened plants, and a valuable mix of habitats. <br><br>
+
+            Chelsea Physic Garden has always been a place for learning and science and this remains true to this day. From our living collection of <br>
+             plants to our archive of scientifically accurate botanical illustrations produced by the Florilegium society we are always learning about <br> the power of plants.</p>
+             <div class="leafe" data-aos="zoom-out"data-aos-duration='3000'        >
+              <div class="div"         ><h4 class="what">Plant database
+              </h4>  <br>Are you wondering whether you can find your  <br>favourite plant in the Chelsea Physic Garden? Did <br> you see an interesting plant yesterday, but have  <br>forgotten its name?<br><br><br>
+                <button type="button" class="btn btn-primary btn-lg">UPCOMEING EVENTS</button></div>
+              <img src="https://www.bunchesofblooms.ca/wp-content/uploads/2020/01/2751-1-scaled.jpg" alt="" height="400px" width="700px">
+              </div>
+            <div class="display"   data-aos="fade-up"
+            data-aos-duration="3000">
+            <div class="img"></div>
+            <div class="dark"><h4 class="what">Florilegium Society
+            </h4> <br> Chelsea Physic Garden has played a central role <br> in the development of botanical painting in the  <br>UK and abroad and our Florilegium Society <br> continues to contribute to this.</h4><br><br>
+              <button type="button" class="btnn btn-primary btn-lg">READ MORE</button></div>
+            </div>
+            <div class="display"  data-aos="fade-up"
+            data-aos-duration="3000">
+             <div class="img2"></div> 
+             <div class="light"><h4 class="what">Index Seminum
+            </h4>  <br>The seed exchange of plant material enable  <br>Botanic Gardens all over the world to introduce <br> new plants to their countries and to maintain <br> interesting and diverse collections within their <br> grounds.</h4><br><br>
+              <button type="button" class="btnn1 btn-primary btn-lg">READ MORE</button>
+            </div>
+             </div>
+             <div class="images" >
+             <div data-aos="fade-right" data-aos-duration="3000">
+              <img src="https://images.stockcake.com/public/9/d/d/9dd6c303-3771-43c4-b6d7-42ed2823518c_medium/rainy-grass-blades-stockcake.jpg" alt="" height="400px" width="700px">
+             </div>
+             <div data-aos="fade-leaft" data-aos-duration="3000" ><img src="https://cdn.mos.cms.futurecdn.net/kfX382eUzZsLQ3B7ftUfFF-415-80.jpg" alt="" height="400px" width="700px" ></div>
+            </div>
+            <div class="images">
+              <div><p class="weather">Weather data</p><p class="weather1">The Garden’s unique microclimate and location has allowed <br> many of our gardeners throughout our history to grow plants not <br> frequently found outside in the UK, including the UK’s largest <br> fruiting olive tree.</p></div>
+              <div><p class="weathereffect">Microclimate emergency
+              </p> <p>The global climate is changing and our Garden can’t escape the  <br>effects of this. We have declared a microclimate emergency and  <br>are tracking the impact on our collection as well as finding ways  <br>to combat the changes</p></div>
+            </div>
+            <div class="largest"></div>
+            <footer class="mainfooter" role="contentinfo">  
+              <div class="footer-middle">  
+              <div class="container">  
+                <div class="row">  
+                  <div class="col-md-3 col-sm-6">  
+                    <div class="footer-pad">  
+                      <h4>care  customer</h4>  
+                      <ul class="list-unstyled">  
+                        <li> <p href="#"> </p> </li>  
+                        <li> <p href="#">Payment Center</p></li>  
+                        <li> <p href="#"> Contact Directory </p></li>  
+                        <li> <p href="#">Forms</p></li>  
+                        <li> <p href="#">News and Updates</p></li>  
+                        <li> <p href="#">FAQs</p></li>  
+                      </ul>  
+                    </div>  
+                  </div>  
+                  <div class="col-md-3 col-sm-6">  
+                    <div class="footer-pad">  
+                      <h4> cheak opening garden </h4>  
+                      <ul class="list-unstyled">  
+                        <li><p href="#"> Blog </p> </li>  
+                        <li><p href="#">Accessibility</p> </li>  
+                        <li><p href="#">Disclaimer</p></li>  
+                        <li><p href="#">Privacy Policy</p></li>  
+                        <li><p href="#">FAQs</p></li>  
+                        <li><p href="#">Webmaster</p></li>  
+                      </ul>  
+                    </div>  
+                  </div>  
+                  <div class="col-md-3 col-sm-6">  
+                    <div class="footer-pad">  
+                      <h4> Garden park </h4>  
+                      <ul class="list-unstyled">  
+                        <li> <p href="#"> Parks and Recreation </p> </li>  
+                        <li> <p href="#"> Public Works </p> </li>  
+                        <li> <p href="#">Police Department</p> </li>  
+                        <li> <p href="#"> Fire </p> </li>  
+                        <li> <p href="#"> Mayor and City Council </p> </li>  
+                      </ul>  
+                    </div>  
+                  </div>  
+                    <div class="col-md-3">  
+                        <h4> Follow Us </h4>  
+                            <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" height="40px" width="40px">
+                            <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" alt="" height="40px" width="40px">   
+                            <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt=""height="40px" width="40px" >  
+                            <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="" height="40px" width="40px">   
+                </div>  
+                </div>  
+                <div class="row">  
+                <div class="col-md-12 copy">  
+                <p class="text-center"> � Copyright 2021 - Company Name.  All rights reserved. </p>  
+                </div>  
+                </div>  
+              </div>  
+              </div>  
+            </footer>  
+            
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>

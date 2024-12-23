@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .first {
+color: aliceblue;
+font-size:30px;
+margin-right:700px;
+margin-top:-400px;
+font-family:content '\F1538';
+cursor: pointer;
+transition:2s;
+    }.first:hover{
+        transform: scale(1.1);
+    }
+    
+    .first1{
+      font-size:20px;
+      color: aliceblue;
+      margin-right:700px;
+      margin-top:50px;
+    }.Explore {
+      font-size:30px;
+      margin-top:70px;}
+      .hiring{
+        font-size:30px;
+        margin-left:300px;
+        margin-top:70px;
+      }.marks{
+        font-size:18px;
+        margin-left:200px;
+      }.img{
+    
+    margin-left:150px;
+    cursor: pointer;height: 400px;
+           width: 700px;
+           border: 2px solid black;
+           /* background-color: #9c1c1c; */
+           background-size: cover;
+           transition:2s;
+background-image: url('https://4.imimg.com/data4/VJ/IG/GLADMIN-12099646/img-2s-500x500.jpg');
+    
+   }.img:hover{
+     /* transform: scale(0.9); */
+           height: 400px;
+           width: 700px;
+           border: 2px solid black;
+           /* background-color: #9c1c1c; */
+           background-image: url('https://www.infullbloom.com.au/wp-content/uploads/2021/04/bride-holding-a-pink-bouquet-of-wedding-flowers.jpg');
+           background-size: cover;
+           cursor: pointer;
+   }
+   .display{
+     display: flex;
+     margin-top:100px;
+   } .dark{
+   height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(18, 57, 62);
+       font-size:16px;
+       color: aliceblue;
+       text-align: center;
+       margin-top:0px;
+      
+   }.what{
+     margin-top:60px;
+   }.btnn{
+     font-size:15px;
+     background-color: aliceblue;
+     color: black;
+    
+   }.btnn:hover{
+     background-color:rgb(18, 57, 62) ;
+     color: aliceblue;}
+     .btnn1{
+    background-color: aliceblue;
+    color: black;
+    font-size:15px;
+  }.btnn1:hover{
+    background-color:  rgb(171, 209, 248);
+    color:black;
+  }
+    .img2{
+      margin-left:150px;
+    cursor: pointer;
+    height: 400px;
+           width: 700px;
+
+            
+           /* background-color: #9c1c1c; */
+           background-size: cover;
+           transition:2s;
+background-image: url('https://bychenai.com/wp-content/uploads/sites/15219/2024/05/1-warwick-soho-corporate-event-location-1024x576.jpeg');
+    
+    }
+    .img2:hover{
+      
+      height: 400px;
+           width: 700px;
+           
+           /* background-color: #9c1c1c; */
+           background-image: url('https://hirespace.imgix.net/spaces/207023/1zqut3ldux3.jpg');
+           background-size: cover;
+           cursor: pointer;}
+           .light{
+    height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(171, 209, 248);
+       font-size:16px;
+       color: rgb(13, 13, 13);
+       text-align: center;
+    
+   }
+   .lighte{
+    height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(4, 62, 80);
+       font-size:16px;
+       color: rgb(251, 247, 247);
+       text-align: center;
+   }
+   .what{
+     margin-top:60px;}
+     .img3{
+        margin-left:0px;
+    cursor: pointer;
+    height: 400px;
+           width: 700px;
+
+            
+           /* background-color: #9c1c1c; */
+           background-size: cover;
+           transition:2s;
+background-image: url('https://www.tagvenue.com/images/location-pages/1920x1080/1675.jpg');
+    
+     }.img3:hover{
+        /* transform: scale(0.9); */
+        height: 400px;
+           width: 700px;
+           border: 2px solid black;
+           /* background-color: #9c1c1c; */
+           background-image: url('https://cocktailsandgames.co.uk/wp-content/uploads/elementor/thumbs/aj-bar-picture-qcj5rqjwljhl2khd3nm0ezpgyuifm5v4zww2le3u2g.jpg');
+           background-size: cover;
+           cursor: pointer;}
+           .faint{
+    height:400px;
+       width:500px;
+       border:0px solid black;
+       background-color: rgb(171, 209, 248);
+       font-size:16px;
+       color: rgb(13, 13, 13);
+       text-align: center;
+     }.payal{
+        display: flex;
+     margin-top:100px;
+     margin-left:140px;
+     }.back{
+        height:400px;
+        width: auto;
+        margin-top:100px;
+        margin-left: 350px;
+        filter: blur(0.6);
+        
+     }.how{
+        margin-top: -300px;
+        margin-left:500px;
+        color: aliceblue;
+     }.then{
+        font-size: 18px;
+        
+     }.class {
+font-size:26px;
+    }footer {  
+ background: rgb(5, 44, 51);  
+  color: white;  
+  margin-top:100px;  
+}  
+footer a {  
+  color: #fff;  
+  font-size: 14px;  
+  transition-duration: 0.2s;  
+}  
+footer a:hover {  
+  color: #FA944B;  
+  text-decoration: none;  
+}  
+.copy {  
+  font-size: 12px;  
+  padding: 10px;  
+  border-top: 1px solid #FFFFFF;  
+}  
+.footer-middle {  
+  padding-top: 2em;  
+  color: white;  
+}  
+ul.social-network {  
+  list-style: none;  
+  display: inline;  
+  margin-left: 0 !important;  
+  padding: 0;  
+}  
+ul.social-network li {  
+  display: inline;  
+  margin: 0 5px;  
+}  
+  
+.social-network a.icoFacebook:hover {  
+  background-color: #3B5998;  
+}  
+.social-network a.icoLinkedin:hover {  
+  background-color: #007bb7;  
+}  
+.social-network a.icoFacebook:hover i  
+{  
+  color: #fff;  
+}  
+.social-network a.icoLinkedin:hover i {  
+  color: #fff;  
+}  
+.social-network a.socialIcon:hover {  
+  color: #44BCDD;  
+}  
+.socialHoverClass {  
+  color: #44BCDD;  
+}  
+.social-circle li a {  
+  display: inline-block;  
+  position: relative;  
+  margin: 0 auto 0 auto;  
+  -moz-border-radius: 50%;  
+  -webkit-border-radius: 50%;  
+  border-radius: 50%;  
+  text-align: center;  
+  width: 30px;  
+  height: 30px;  
+  font-size: 15px;  
+}  
+.social-circle li i {  
+  margin: 0;  
+  line-height: 30px;  
+  text-align: center;  
+}  
+.social-circle li a:hover i  
+{  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.triggeredHover {  
+  -moz-transform: rotate(360deg);  
+  -webkit-transform: rotate(360deg);  
+  -ms--transform: rotate(360deg);  
+  transform: rotate(360deg);  
+  -webkit-transition: all 0.2s;  
+  -moz-transition: all 0.2s;  
+  -o-transition: all 0.2s;  
+  -ms-transition: all 0.2s;  
+  transition: all 0.2s;  
+}  
+.social-circle i {  
+  color: #595959;  
+  -webkit-transition: all 0.8s;  
+  -moz-transition: all 0.8s;  
+  -o-transition: all 0.8s;  
+  -ms-transition: all 0.8s;  
+  transition: all 0.8s;  
+}  
+.social-network a {  
+  background-color: #F9F9F9;  
+}  
+.social-network a:hover {  
+background: #ff304d;  
+} 
+    </style>
+</head>
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-Secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="https://img.freepik.com/premium-vector/green-plant-logo-with-hand-circle_898845-4.jpg" alt="" height="50px" width="50px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./project.html">visit</a>
+                  <a class="nav-link active" href="./visit.html">Support Us</a>
+                  <a class="nav-link active" href="#plant.html">plant Science</a>
+                  <a class="nav-link active" href="./school.html" >school+learing</a>
+                  <a class="nav-link active" href="./login.html" >login</a>
+                      <div >
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="./hire.html">hire</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div >
+                        <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  
+                </div>
+              
+            </div>
+          </nav>
+    </div>
+    <img src="https://sweepsouth.com/wp-content/uploads/2023/06/The-Benefits-of-Hiring-a-Regular-Gardening-Service-for-Your-Home.jpg" alt="" height="600px" width="1500px">
+    <div  data-aos="zoom-in-left"data-aos-duration='3000'         class="carousel-caption d-none d-md-block">
+        <p class="first">For the botanically curious </p>
+        <p class="first1">Some representative placeholder content for the first slide.</p>
+      </div>
+      <div>
+        <p class="hiring">Hiring the Garden</p>
+        <p class="marks">Mark your special occasion within the beautiful and iconic Chelsea Physic Garden in the heart of London.</p>
+      </div>
+      <div class="display">
+        <div class="img"></div>
+        <div class="dark"><h4 class="what">Weddings
+        </h4> Celebrate your wedding in the spectacular yet <br> understated, tranquil beauty of the Garden. <br> Available for exclusive private hire, our <br> outstanding and adaptable venue offers any <br> number of décor and theme possibilities. <br></h4><br><br><br><br>
+          <button type="button" class="btnn btn-primary btn-lg">READ MORE</button></div>
+        </div>
+        <div class="display"  data-aos="fade-up"
+        data-aos-duration="3000">
+         <div class="img2"></div> 
+         <div class="light"><h4 class="what">ICorporate hire
+
+        </h4>  <br>Our London venue offers not only outdoor space <br> but also elegant indoor space. Find out about our <br> Gallery room which overlooks the iconic Chelsea <br> Physic Garden.</h4><br><br>
+          <button type="button" class="btnn1 btn-primary btn-lg">READ MORE</button>
+        </div>
+    </div>
+    <div class="payal" data-aos="fade-up"
+    data-aos-duration="3000">
+        
+         <div class="lighte">
+          <h4 class="what">Hire the Garden
+
+        </h4>Spend a relaxed spring or summer afternoon with <br> exclusive use of the beautiful Chelsea Physic <br> Garden for your private Garden Party. A day in <br> the garden with family and friends is a special  <br>and memorable way to celebrate.  <br>
+
+
+      </h4><br><br>
+          <button type="button" class="btnn1 btn-primary btn-lg">READ MORE</button>
+        </div>
+ <div class="img3"></div>
+        </div>
+        <div><img   class="back"    src="https://png.pngtree.com/thumb_back/fh260/background/20240924/pngtree-enchanted-garden-floral-arch-backdrop-secret-backgrou-creative-design-live-stream-image_16247025.jpg" alt=""></div>
+        <div class="how">
+        <h5 class="class"> How hiring helps </h5><br><br>
+       <p class="then"> when you hire the chelseaphysic garden your money goes <br> to support the work f caring for the collection of <br> plantsand the garen for future generations. <br><br>The chelsa physic garden sets out to :mantain the doccument</p>
+    </div><footer class="mainfooter" role="contentinfo">  
+      <div class="footer-middle">  
+      <div class="container">  
+        <div class="row">  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4> Care customer</h4>  
+              <ul class="list-unstyled">  
+                <li> <p href="#"> </p> </li>  
+                <li> <p href="#">Payment Center</p></li>  
+                <li> <p href="#"> Contact Directory </p></li>  
+                <li> <p href="#">Forms</p></li>  
+                <li> <p href="#">News and Updates</p></li>  
+                <li> <p href="#">FAQs</p></li>  
+              </ul>  
+            </div>  
+          </div>  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4>cheaking Garden</h4>  
+              <ul class="list-unstyled">  
+                <li><p href="#"> Blog </p> </li>  
+                <li><p href="#">Accessibility</p> </li>  
+                <li><p href="#">Disclaimer</p></li>  
+                <li><p href="#">Privacy Policy</p></li>  
+                <li><p href="#">FAQs</p></li>  
+                <li><p href="#">Webmaster</p></li>  
+              </ul>  
+            </div>  
+          </div>  
+          <div class="col-md-3 col-sm-6">  
+            <div class="footer-pad">  
+              <h4> garden Park </h4>  
+              <ul class="list-unstyled">  
+                <li> <p href="#"> Parks and Recreation </p> </li>  
+                <li> <p href="#"> Public Works </p> </li>  
+                <li> <p href="#">Police Department</p> </li>  
+                <li> <p href="#"> Fire </p> </li>  
+                <li> <p href="#"> Mayor and City Council </p> </li>  
+              </ul>  
+            </div>  
+          </div>  
+            <div class="col-md-3">  
+                <h4> Follow Us </h4>  
+                    <img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="" height="40px" width="40px">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15047/15047435.png" alt="" height="40px" width="40px">   
+                    <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt=""height="40px" width="40px" >  
+                    <img src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png" alt="" height="40px" width="40px">   
+        </div>  
+        </div>  
+        <div class="row">  
+        <div class="col-md-12 copy">  
+        <p class="text-center"> � Copyright 2021 - Company Name.  All rights reserved. </p>  
+        </div>  
+        </div>  
+      </div>  
+      </div>  
+    </footer>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
